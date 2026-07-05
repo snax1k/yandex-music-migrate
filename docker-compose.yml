@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  music-migrator:
+    build: .
+    container_name: yandex_music_migrator
+    env_file:
+      - .env
+    restart: "no" # Скрипт отработает один раз и выключится
